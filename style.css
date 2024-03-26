@@ -298,7 +298,7 @@ right: 5.8rem;
   /* background-color: yellow; */
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 100% 100%;
 }
 
 #hero {
@@ -310,7 +310,7 @@ right: 5.8rem;
   /* background-color: #dc0dac; */
   align-self: center;
   justify-self: center;
-  padding: 12rem;
+  padding: 8rem;
   margin-left: 3rem;
 }
 
