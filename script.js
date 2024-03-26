@@ -1,16 +1,16 @@
 const bar = document.getElementById("bar");
-const close = document.getElementById("close");
+const close = document.getElementById("close-cart");
 const nav = document.getElementById("navbar");
 
 if (bar) {
   bar.addEventListener("click", () => {
-    nav.classList.add("active");
+    nav.classList.add("navActive");
   });
 }
 
 if (close) {
   close.addEventListener("click", () => {
-    nav.classList.remove("active");
+    nav.classList.remove("navActive");
   });
 }
 const CartList = document.querySelector("#shopping-bag");

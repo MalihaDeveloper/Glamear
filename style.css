@@ -9,7 +9,10 @@
 html {
   font-size: 62.5%;
 }
-
+.red{
+  color: rgb(219, 0, 0);
+  line-height: 1rem;
+}
 h1 {
   font-size: 5rem;
   line-height: 6.4rem;
@@ -108,11 +111,23 @@ button.white {
   height: 5.4rem;
   color: #f814bc;
 }
+#navbar #close-cart img{
+  height: 2rem;
+  width: 2rem;
+  display: none;
+}
 #navbar a img {
   height: 2rem;
   color: #f814bc;
+ 
+}
+#navbar{
+  display: flex;
 }
 
+#bar{
+  display: none;
+}
 /* header */
 #header {
   display: flex;
@@ -126,11 +141,7 @@ button.white {
   top: 0;
   left: 0;
 }
-#navbar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 #navbar li {
   list-style: none;
   padding: 0 2rem;
@@ -216,11 +227,14 @@ button.white {
 }
 #close-cart {
   position: absolute;
-  top: 1rem;
-  right: 0.8rem;
+  top: 5rem;
+right: 5.8rem;
   font-size: 2rem;
   color: #1a1a1a;
   cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+ 
 }
 .Cartt {
   position: fixed;
@@ -470,6 +484,7 @@ button.white {
   background-position: center;
   padding: 9rem;
 }
+
 #sm-Banner .banner-box2 {
   background-image: url("All\ images/banner2.jpg");
 }
@@ -495,29 +510,53 @@ button.white {
   border: 0.1rem solid #f012be;
   color: white;
 }
+.Box-col-1of3 .banner-box {
+  padding: 2rem;
+}
+.Box-col-1of3 {
+  width: 30%;
+  display: grid;
+  margin: 1rem 1rem;
+}
+.banner-box {
+  align-self: center;
+  justify-self: center;
+}
+.banner-box h1 {
+  font-size: 3.5rem;
+  line-height: 4.4rem;
+  text-transform: uppercase;
+}
+.Box-col-1of3 .banner-box h2 {
+  font-size: 2.5rem;
+  color: red;
+  line-height: 2rem;
+}
+.B1 {
+  background-color: #d2c2cf;
+}
+.B2 {
+  background-color: #d2c2cf;
+}
+.B3 {
+  background-color: #d2c2cf;
+  text-align: left;
+}
+.shopButton{
+ 
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
 
-#banner-3 {
-  padding: 0 8rem;
-}
-#banner-3 .banner-box {
-  width: 100%;
-  height: 100%;
-  background-image: url("All\ images/1.jpg");
-  background-size: cover;
-  background-position: center;
-  padding: 11rem;
-  margin-bottom: 2rem;
-}
-#banner-3 .banner-box2__img {
-  background-image: url("All\ images/2.jpg");
-  background-color: rgba(255, 255, 255, 0.25);
-}
+  background-color: #f012be;
+  color: #fff;
+  border-radius: 1.2rem;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
 
-#banner-3 .banner-box3 {
-  background-image: url("All\ images/3.jpg");
-  background-color: rgba(255, 255, 255, 0.25);
-}
+  padding: 0.7rem 0.7rem;
 
+}
 #newsletter {
   display: flex;
   justify-content: space-between;
@@ -567,10 +606,10 @@ button.white {
 }
 .col img {
   width: 15.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   position: relative;
-  top: -7%;
-  left: -8%;
+  top: 1%;
+  left: 3%;
 }
 
 footer {
@@ -611,8 +650,6 @@ footer .follow i {
   cursor: pointer;
 }
 
-footer .install .row img {
-}
 footer .follow i:hover,
 footer a:hover {
   color: #f012be;
@@ -1265,6 +1302,50 @@ width: 106rem;
     flex-basis: calc(43% - 2rem); /* Two columns, each with 50% basis */
     margin: 2rem; /* Adjust margin as needed */
   }
+  #header a img {
+    height: 4.4rem;
+    color: #f814bc;
+    margin-left: -4rem;
+  }
+#navbar{
+  display: none;
+}
+#navbar #close-cart img{
+ 
+  display: block;
+}
+#bar img{
+  margin-left: 8rem;
+}
+#navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  height: 100vh;
+  width: 300px;
+  background-color: #ffffff;
+  box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
+  padding: 80px 0 0 10px;
+  transition: 0.3s;
+}
+
+#navbar.navActive{
+  right: 0;
+}
+  #navbar li {
+    margin-bottom: 25px;
+  }
+  #bar{
+    display: block;
+  }
+  #navbar a img{
+    display: block;
+  }
+  
   #header .logo {
     width: 2.5rem;
   }
@@ -1292,14 +1373,65 @@ width: 106rem;
   }
   #feature h4 {
     margin-left: 2.5rem;
-    }
-    h4 {
+  }
+  h4 {
     font-size: 1.5rem;
-}
-#product1 {
-  text-align: center;
-  margin-top: 2rem;
-}
+  }
+  #product1 {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  #product1 .pro .cart {
+    border-radius: 3rem;
+bottom: 0.1rem;
+  }
+  .row .col-1of2 {
+    width: calc((100% - 6rem) / 1);
+  }
+  #sm-Banner .banner-box {
+    background-position: right;
+    padding: 4rem;
+  }
+
+  #banner-3 {
+    padding: 0;
+  }
+
+  .Box-col-1of3 .banner-box {
+    padding: 1.5rem;
+    width: 100%;
+  }
+  .banner-box h1 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+  .Box-col-1of3 .banner-box h2 {
+    font-size: 1.5rem;
+    color: red;
+    line-height: 1.5rem;
+  }
+  .Box-col-1of3 {
+    margin: 0.5rem 0.2rem;
+  }
+  .B1 {
+    background-color: #d2c2cf;
+  }
+  .B2 {
+    background-color: #d2c2cf;
+  }
+  .B3 {
+    background-color: #d2c2cf;
+  }
+  .col img {
+    width: 12.5rem;
+    top: 1%;
+    left: 3%;
+  }
+
+  footer .col {
+    margin: 0;
+    padding: 4rem;
+  }
 }
 @media (max-width: 75em) {
   .row .col-1of3 {
@@ -1309,8 +1441,6 @@ width: 106rem;
 }
 /* >1200-->Bigger screens*/
 @media (min-width: 112.5em) {
-  .row .col-1of3 {
-  }
   #header .logo {
     width: 12rem;
   }
