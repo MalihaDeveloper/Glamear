@@ -621,8 +621,7 @@ footer .col {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 2rem;
-  margin-right: 16.7rem;
+  margin: 1rem 16.7rem 2rem 2rem;
 }
 footer .col-install p img {
   width: 16.5rem;
