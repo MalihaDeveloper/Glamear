@@ -9,7 +9,7 @@
 html {
   font-size: 62.5%;
 }
-.red{
+.red {
   color: rgb(219, 0, 0);
   line-height: 1rem;
 }
@@ -111,7 +111,7 @@ button.white {
   height: 5.4rem;
   color: #f814bc;
 }
-#navbar #close-cart img{
+#navbar #close-cart img {
   height: 2rem;
   width: 2rem;
   display: none;
@@ -119,13 +119,12 @@ button.white {
 #navbar a img {
   height: 2rem;
   color: #f814bc;
- 
 }
-#navbar{
+#navbar {
   display: flex;
 }
 
-#bar{
+#bar {
   display: none;
 }
 /* header */
@@ -228,13 +227,12 @@ button.white {
 #close-cart {
   position: absolute;
   top: 5rem;
-right: 5.8rem;
+  right: 5.8rem;
   font-size: 2rem;
   color: #1a1a1a;
   cursor: pointer;
   width: 2rem;
   height: 2rem;
- 
 }
 .Cartt {
   position: fixed;
@@ -295,16 +293,32 @@ right: 5.8rem;
 }
 /* Home page */
 .container {
-  /* background-color: yellow; */
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 100% 100%;
+/* height: 70vh; */
+ width: 100%;
+ padding: 2rem 8rem;
 }
 
 #hero {
-  height: 100%;
+  
   width: 100%;
   background-size: cover;
+}
+.intro{
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  width: 95%;
+
+}
+.intro .intro-content{
+margin: auto 0;
+width: 60%;
+}
+.intro img{
+width: 37%;
+height: 35%;
+object-fit: cover;
+/* background-color: #465b52; */
 }
 .left {
   /* background-color: #dc0dac; */
@@ -542,20 +556,17 @@ right: 5.8rem;
   background-color: #d2c2cf;
   text-align: left;
 }
-.shopButton{
- 
+.shopButton {
   font-size: 1.2rem;
   border: none;
   cursor: pointer;
-
+  margin-top: 1rem;
   background-color: #f012be;
   color: #fff;
   border-radius: 1.2rem;
   font-weight: 600;
   font-family: "Roboto", sans-serif;
-
   padding: 0.7rem 0.7rem;
-
 }
 #newsletter {
   display: flex;
@@ -823,8 +834,7 @@ width: 106rem;
 }
 #Shopproduct1 .ShopPro-container {
   display: flex;
-  justify-content: space-between;
-  padding-top: 2rem;
+
   flex-wrap: wrap;
 }
 
@@ -893,8 +903,8 @@ width: 106rem;
   margin-top: -0.4rem;
 }
 .Shopcontainer {
-  background-color: white;
-  height: 55vh;
+  background-color: rebeccapurple;
+  height: 40vh;
   width: 80vw;
   margin: 1rem auto;
 }
@@ -1001,11 +1011,13 @@ width: 106rem;
 #Blog .blog-img {
   width: 50%;
   margin-right: 4rem;
+  background-color: #3c3c3c;
 }
 #Blog .blog-img img {
   width: 100%;
   height: 30rem;
   object-fit: cover;
+  background-color: #465b52;
 }
 #Blog .Blog-details {
   width: 50%;
@@ -1047,8 +1059,8 @@ width: 106rem;
 
 /* About Page */
 #About-head img {
-  width: 50%;
-  height: auto;
+  width: 100%;
+  height: 70%;
 }
 #About-head {
   display: flex;
@@ -1069,6 +1081,12 @@ width: 106rem;
   width: 100%;
   height: 100%;
   border-radius: 2rem;
+}
+#headerText {
+  padding: 5rem;
+}
+#headerText p {
+  width: 90%;
 }
 
 /* Contact page */
@@ -1138,6 +1156,7 @@ width: 106rem;
 }
 
 #Form-details .people div {
+  width: 100%;
   padding-bottom: 2.5rem;
   padding-right: 8rem;
 }
@@ -1294,7 +1313,7 @@ width: 106rem;
     height: 100%;
   }
   h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 1.5rem;
   }
   .row .col-1of3 {
@@ -1306,45 +1325,44 @@ width: 106rem;
     color: #f814bc;
     margin-left: -4rem;
   }
-#navbar{
-  display: none;
-}
-#navbar #close-cart img{
- 
-  display: block;
-}
-#bar img{
-  margin-left: 8rem;
-}
-#navbar {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: fixed;
-  top: 0;
-  right: -300px;
-  height: 100vh;
-  width: 300px;
-  background-color: #ffffff;
-  box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
-  padding: 80px 0 0 10px;
-  transition: 0.3s;
-}
+  #navbar {
+    display: none;
+  }
+  #navbar #close-cart img {
+    display: block;
+  }
+  #bar img {
+    margin-left: 8rem;
+  }
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #ffffff;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
+  }
 
-#navbar.navActive{
-  right: 0;
-}
+  #navbar.navActive {
+    right: 0;
+  }
   #navbar li {
     margin-bottom: 25px;
   }
-  #bar{
+  #bar {
     display: block;
   }
-  #navbar a img{
+  #navbar a img {
     display: block;
   }
-  
+
   #header .logo {
     width: 2.5rem;
   }
@@ -1358,17 +1376,54 @@ width: 106rem;
     padding: 0.8rem 0.8rem;
     font-size: 1.4rem;
   }
+  .shopButton {
+    font-size: 0.75rem;
+    margin-top: 5rem;
+  }
+  .Shopcontainer {
+    background-color: rebeccapurple;
+    height: 25vh;
+    width: 90vw;
+    margin: 1rem auto;
+  }
+  #headerText {
+    padding-top: 1rem;
+    padding: 2rem;
+  }
+  #headerText h2 {
+    font-size: 3rem;
+  }
+  #headerText p {
+    font-family: 2.5rem;
+  }
+  #About-App h1 {
+    font-family: 15rem;
+  }
+  #About-App .video {
+    width: 100%;
+  }
+  #newsletter .form {
+    width: 100%;
+  }
+  #newsletter input {
+    height: 3.125rem;
+    display: block;
+    width: 100%;
+    background-color: #aa1e1e;
+  }
   #feature {
     margin-top: 1.5rem;
+    display: flex;
+    /* gap: 4rem; */
   }
   #feature .fe-box1 img {
-    width: 12.4rem;
+    width: 116.4rem;
   }
   #feature .fe-box2 img {
-    width: 12.4rem;
+    width: 116.4rem;
   }
   #feature .fe-box3 img {
-    width: 12.4rem;
+    width: 116.4rem;
   }
   #feature h4 {
     margin-left: 2.5rem;
@@ -1382,7 +1437,7 @@ width: 106rem;
   }
   #product1 .pro .cart {
     border-radius: 3rem;
-bottom: 0.1rem;
+    bottom: 0.1rem;
   }
   .row .col-1of2 {
     width: calc((100% - 6rem) / 1);
@@ -1395,6 +1450,106 @@ bottom: 0.1rem;
   #banner-3 {
     padding: 0;
   }
+  .headerImage {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+  }
+  .headerImage img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    object-fit: cover;
+    background-color: #465b52;
+  }
+  .headerImage-title {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    /* transform: translate(-50%, -50%); */
+    font-size: 3rem;
+    /* font-family: "League Spartan", sans-serif; */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .container{
+height: 35vh;
+width: 100%;
+padding: 0;
+background-color: #cf4b4b;
+  }
+  .intro{
+    /* height: 60vh; */
+    width:100vw;
+    background-color: #465b52;
+
+  }
+  .intro .intro-content h1{
+
+  margin-left: 2rem;
+    font-size: 2.6rem;
+    line-height: 3.5rem;
+
+   
+    }
+    .intro img{
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    background-color: #465b52;
+    }
+  #contact-details {
+    display: block;
+  }
+  #contact-details .details {
+    width: 100%;
+  }
+  #contact-details .Map {
+    width: 100%;
+    height: 40rem;
+  }
+  #Form-details {
+    display: block;
+  }
+  #Form-details form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #Form-details .people div {
+    margin-top: 2rem;
+  }
+  #Blog .blog-img {
+    width: 100%;
+    background-color: #aa1e1e;
+  }
+  #Blog .blog-img img {
+    width: 100%;
+    /* background-color: #3c3c3c; */
+  }
+  #Blog .blog-box {
+    display: block;
+    /* background-color: #222; */
+  
+  }
+  #Blog .Blog-details {
+    width: 100%;
+    background-color: rebeccapurple;
+    text-align: left;
+  }
+#Blog{
+  padding: 6rem 2rem;
+}
 
   .Box-col-1of3 .banner-box {
     padding: 1.5rem;
@@ -1432,10 +1587,20 @@ bottom: 0.1rem;
     padding: 4rem;
   }
 }
+/* Laptop display adjustments (width between 1024px and 1440px) */
+
 @media (max-width: 75em) {
   .row .col-1of3 {
     font-size: 56.25%; /* 1rem = 9px, 9/16 = 56.25% */
     width: calc((100% - 2 * 6rem) / 3);
+  }
+  .headerImage img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 30%;
+    object-fit: cover;
   }
 }
 /* >1200-->Bigger screens*/

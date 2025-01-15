@@ -14,20 +14,22 @@
     <a href="#"><img src="Logo/Glamear_Logo.png" class="Logo" alt="Logo" /></a>
 
     <div>
-      <ul id="navbar">
+      <ul id="navbar" class="">
         <li><a href="index.html">Home</a></li>
         <li><a href="Shop.html">Shop</a></li>
         <li><a href="Blog.html">Blog</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a class="active" href="contact.html">Contact</a></li>
-         <div id="shopping-bag">
-            <a href="cart.html"><img src="FavIcons/shopping-bag.svg" alt="" /></a>
-            <span id="cart-quantity">0</span>
-          </div>
-        <a href="#" id="close"><img src="close-sm.svg" alt=""></a>
+        <a href="#" id="close-cart"><img src="FavIcons/close.png" alt=""></a>
+        <li><a  class="active" href="contact.html">Contact</a></li>
+        <li id="shopping-bag">
+          <a href="cart.html"><img src="FavIcons/shopping-bag.svg" alt="" /></a>
+          <span id="cart-quantity">0</span>
+        </li>
       </ul>
+      <div id="bar">
+        <img src="FavIcons/outdent.svg" style width="34px" alt="" />
+      </div>
     </div>
-
     <div id="mobile">
       <a href="cart.html"><img src="FavIcons/shopping-bag.svg" style width="24px" alt="" /></a>
       <div id="bar">
@@ -38,7 +40,10 @@
 
   <section id="page-header">
     <div class="Shopcontainer">
-      <div class="ShopBanner"><img src="All images/Let's _talk.png" alt="img" /></div>
+      <section  class="headerImage">
+        <img style="width:100%;height:300px; position:relative; object-fit: cover;" src="./All images//freepik__upload__58619.jpeg" alt="Know Us Background">
+        <h2 style="position: absolute; top:30%;left:47%;color: white; font-weight:900;">Let's talk</h2>
+    </section>
     </div>
     </div>
   </section>
@@ -49,14 +54,22 @@
       <h3>Head Office</h3>
       <div>
         <li>
-          <img src="FavIcons/map.svg" alt="">
-          <p>Famous Cine Labs, Dr. E Moses Road, Agripada</p>
-          <img src="FavIcons/email.svg" alt="">
-          <p>Contact@example.com</p>
-          <img src="FavIcons/call.svg" alt="">
-          <p>Contact@123</p>
-          <img src="FavIcons/time.svg" alt="">
-          <p>Monday to Saturday:9:00am to 5:00pm</p>
+          <div style="display: flex; gap: 1rem;">
+            <img src="FavIcons/map.svg" alt="">
+            <p>Famous Cine Labs, Dr. E Moses Road, Agripada</p>
+          </div>
+          <div style="display: flex; gap: 1rem;">
+            <img src="FavIcons/email.svg" alt="">
+            <p>Contact@example.com</p>
+          </div>
+          <div style="display: flex; gap: 1rem;">
+            <img src="FavIcons/call.svg" alt="">
+            <p>Contact@123</p>
+          </div>
+          <div style="display: flex; gap: 1rem;">
+            <img src="FavIcons/time.svg" alt="">
+            <p>Monday to Saturday:9:00am to 5:00pm</p>
+          </div>
         </li>
       </div>
     </div>
